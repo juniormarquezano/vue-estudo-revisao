@@ -16,8 +16,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PRODUTOS</a></li>
+            <router-link :to="{ name: 'home' }" tag="li" exact>
+              <a>HOME</a>
+            </router-link>
+            <router-link :to="{ name: 'products' }" tag="li">
+              <a>PRODUTOS</a>
+            </router-link>
           </ul>
         </div>
       </div>

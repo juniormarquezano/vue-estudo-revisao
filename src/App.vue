@@ -1,10 +1,9 @@
 <script>
-import Home from './components/Home'
 import PageHeader from './components/root/header/Main'
 
 export default {
   name: 'app',
-  components: { Home, PageHeader }
+  components: { PageHeader }
 }
 </script>
 
@@ -14,7 +13,7 @@ export default {
       <page-header />
     </header>
     <main class="container">
-      <home />
+      <router-view></router-view>
     </main>
   </div>
 </template>

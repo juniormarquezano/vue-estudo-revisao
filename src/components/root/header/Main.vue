@@ -30,6 +30,12 @@
             <router-link :to="{ name: 'products' }" tag="li">
               <a>PRODUTOS</a>
             </router-link>
+            <router-link :to="{ name: 'posts' }" tag="li">
+              <a>BLOG</a>
+            </router-link>
+            <router-link :to="{ name: 'categories' }" tag="li">
+              <a>CATEGORIAS</a>
+            </router-link>
           </ul>
         </div>
       </div>

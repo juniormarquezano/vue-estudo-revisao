@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" v-cloak>
     <header>
       <page-header />
     </header>

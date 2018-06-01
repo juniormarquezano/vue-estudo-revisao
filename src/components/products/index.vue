@@ -15,12 +15,12 @@
         products: state => { return state.products }
       })
       */
-      ...mapState({
+      ...mapState('products', {
         products: state => state.products
       })
     },
     methods: {
-      ...mapActions(['addProduct', 'removeProduct', 'updateProduct']),
+      ...mapActions('products', ['addProduct', 'removeProduct', 'updateProduct']),
       /*
       ...mapActions({
         add: 'increment'
@@ -84,7 +84,7 @@
       <form @submit.prevent="_submit">
         <div class="form-group">
           <label for="product">Nome do Produto</label>
-          <input type="text" class="form-control" placeholder="Nome do Produto" v-model="product.name">
+          <input type="text" id="product" class="form-control" placeholder="Nome do Produto" v-model="product.name">
         </div>
         <button class="btn btn-primary">Salvar</button>
         <a @click.prevent="close" class="btn btn-danger">Fechar</a>

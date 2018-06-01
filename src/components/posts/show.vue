@@ -22,7 +22,7 @@
     <div class="container">
       <h2 class="display-4">{{ post.title }}</h2>
       <p class="lead">{{ post.body }}</p>
-      <router-link class="btn btn-primary" :to="{name: 'posts'}">Voltar</router-link>
+      <router-link class="btn btn-primary" :to="{name: 'posts-index'}">Voltar</router-link>
     </div>
   </div>
 </template>

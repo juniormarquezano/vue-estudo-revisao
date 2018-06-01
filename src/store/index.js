@@ -1,21 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import actions from './actions'
-import mutations from './mutations'
-import state from './state'
 import categories from './modules/categories'
 import blog from './modules/blog'
+import products from './modules/products'
 
 Vue.use(Vuex)
 
 const modules = {
   categories,
-  blog
+  blog,
+  products
 }
 
 export default new Vuex.Store({
-  actions,
-  mutations,
-  state,
   modules
 })
